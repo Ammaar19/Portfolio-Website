@@ -41,7 +41,7 @@
 }
 
 .logo-text{
-    margin-left:-1.2rem;
+    margin-left:-0.7rem;
     font-size:28px;
 }
 
@@ -90,7 +90,7 @@ a{
     font-size: 7em;
     color:rgb(231,231,231);
     
-    bottom: -16%;
+    bottom: -5%;
     left: -5%;
     font-weight: bold;
     transition: all 3s;
@@ -163,6 +163,7 @@ a{
 
   .hero-section-right{
     position:relative;
+    
   }
 
   .absolute{
@@ -170,7 +171,7 @@ a{
   }
 
   .user-image{
-    padding:2.5rem;
+    padding:1rem;
     filter:grayscale(1);
     transition:all 1s;
     animation: scaleImage 5s linear infinite;
@@ -178,6 +179,8 @@ a{
 
   .user-image img{
     z-index:-9;
+    width: 100%; /* Optionally, set the width to 100% for responsiveness */
+    height: 5%; /* Maintain aspect ratio */
   }
 
   @keyframes scaleImage {
@@ -330,7 +333,7 @@ a{
     bottom:0;
     background-color: #1f1f1f9a;
     z-index:0;
-    /* transform: scaleX(1); */
+    transform: scaleX(1);
   }
 
   .project-card::before{
@@ -381,20 +384,28 @@ a{
     display:flex;
     flex-direction:column;
     color:white;
-    padding:2em;
+    padding:4em;
     bottom:20%;
     z-index:5;
     gap:1em;
     transition:all 0.4s;
   }
 
+  .skle{
+    padding-top: 40%;
+  }
 
+  .qwe{
+    align-items: center;
+    padding-top: 145%;
+    padding-left: 15%;
+  }
   .project-content-left{ 
     left:10%;
   }
 
   .project-content-right{ 
-    right:10%;
+    right:13%;
   }
 
   .project-skills-container{
@@ -448,19 +459,19 @@ a{
   }
 
   #project1{
-    background-image: url(./images/projects/Project1.png);
+    background-image: url(./images/projects/chatapp.jpg);
   }
 
   #project2{
     margin-left:120px;
-    background-image: url(./images/projects/Project2.png);
+    background-image: url(./images/projects/news\ dec.png);
   }
   #project3{
-    background-image: url(./images/projects/Project3.png);
+    background-image: url(./images/projects/Benchmarking-Your-Invoice-Process-1-1024x538.png);
   }
   #project4{
     margin-left:120px;
-    background-image: url(./images/projects/Project4.png);
+    background-image: url(./images/projects/parallax.jpg);
   }
 
   @media (max-width:1300px) {
@@ -484,7 +495,7 @@ a{
       background-position: center;
     }
     .project-content {
-      scale: 0.5;
+      scale: 1;
       bottom: 0;
       left: 0;
       right: 0;
